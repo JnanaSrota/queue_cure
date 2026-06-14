@@ -1,0 +1,6 @@
+{
+  "name": "QueueCure",
+  "description": "Real-time clinic token management system for Indian outpatient status tracking and wait-time calculation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
