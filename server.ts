@@ -6,8 +6,9 @@ import { fileURLToPath } from "url";
 import { QueueRepository } from "./server/persistence.js";
 import { calculateWaitTime, getWaitingTokensSorted } from "./src/lib/waitTimeCalculator.js";
 import { createServer as createViteServer } from "vite";
+import { createRequire } from "module";
 
-const __filename = fileURLToPath(import.meta.url);
+const __filename = createRequire(import.meta.url ?? "file://").resolve("./server.cjs");
 const __dirname = path.dirname(__filename);
 
 async function start() {
