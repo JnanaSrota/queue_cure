@@ -12,7 +12,7 @@ import { createServer as createViteServer } from "vite";
 
 async function start() {
   const app = express();
-  const PORT = 3000;
+  const PORT = Number(process.env.PORT) || 3000;
 
   // Track undo backup state
   let undoBackup: any = null;
