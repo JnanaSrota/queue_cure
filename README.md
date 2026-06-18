@@ -40,9 +40,19 @@ QueueCure operates as a single-repository full-stack application. It leverages a
 
 ---
 
-## 🚀 Live Run Instructions
+## 🚀 Live Deployment
 
-Start the application using standard Node configurations.
+**Production URL**: [https://queuecure-production.up.railway.app](https://queuecure-production.up.railway.app)
+
+- **Main Portal**: `/`
+- **Receptionist Console**: `/reception`
+- **Patient TV Display**: `/waiting`
+
+Deployed on [Railway](https://railway.app) with automatic builds from the main branch.
+
+---
+
+## 🛠️ Local Development
 
 ### 1. Requirements
 Ensure Node.js (v18+) is installed.
@@ -56,13 +66,9 @@ npm install
 ```bash
 npm run dev
 ```
-The server will boot on port `3000` (which is externally accessible in the container reverse proxy). You can navigate to:
-- **Main Portal**: `http://localhost:3000/`
-- **Receptionist Console**: `http://localhost:3000/reception`
-- **Patient TV display**: `http://localhost:3000/waiting`
+The server boots on port `3000`. Navigate to `http://localhost:3000/`.
 
-### 4. Compiling Production Builds
-To compile static assets and bundle the Express server with `esbuild`, run:
+### 4. Production Build
 ```bash
 npm run build
 npm start
