@@ -1,11 +1,11 @@
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
+// import { fileURLToPath } from "url";
 import { Queue } from "../src/types.js";
 
 // Derive current directory since we're in ES Modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
 const DATA_FILE_PATH = path.join(__dirname, "data.json");
 
